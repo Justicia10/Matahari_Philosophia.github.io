@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philosophia — Tempat Ide Bertemu, Lalu Menjadi Tulisan</title>
+
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="#" class="nav-logo">
+        <span class="logo-phi">Φ</span>
+        <span class="logo-text">Philosophia</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kegiatan">Kegiatan</a></li>
+        <li><a href="#tulisan">Tulisan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="nav-controls">
+        <!-- Dark/Light Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle tema">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <!-- Mobile hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Decorative background orbs -->
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <!-- Blurred background word behind the main headline -->
+    <div class="hero-bg-word" aria-hidden="true">Philosophia</div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Komunitas Pemikir &amp; Penulis</p>
+      <h1 class="hero-title">
+        Tempat ide bertemu<br />
+        <em>menjadi tulisan.</em>
+      </h1>
+      <p class="hero-desc">
+        Philosophia adalah ruang literasi untuk membaca, menulis,
+        dan berdiskusi. Di sini, gagasan diarsipkan menjadi karya —
+        dari refleksi agama, filsafat, sosial, sampai puisi.
+      </p>
+      <div class="hero-cta">
+        <a href="#tulisan" class="btn btn-primary">Baca Tulisan</a>
+        <a href="#kontak" class="btn btn-outline">Gabung Komunitas</a>
+      </div>
+
+      <!-- Bottom hero detail -->
+      <div class="hero-bottom">
+        <div class="hero-badge">
+          <span class="badge-num">15</span>
+          <span class="badge-label">Karya Pilihan</span>
+        </div>
+
+        <div class="scroll-indicator">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Gulir ke bawah</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TENTANG PHILOSOPHIA
+  ============================================================ -->
+  <section class="tentang section" id="tentang">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Siapa Kami</span>
+        <h2 class="section-title">Tentang Philosophia</h2>
+        <p class="section-desc">
+          Didirikan dari kecintaan pada kata dan pemikiran, Philosophia hadir
+          sebagai komunitas yang hangat — tempat berdiskusi tanpa menghakimi,
+          membaca tanpa terburu-buru, dan menulis tanpa takut salah.
+        </p>
+      </div>
+
+      <div class="cards-grid three-col">
+        <!-- Card 1 -->
+        <div class="glass-card" data-delay="0">
+          <div class="card-icon">DIA</div>
+          <h3>Diskusi Santai</h3>
+          <p>
+            Forum diskusi mingguan yang mengangkat topik filsafat, sastra,
+            sains, dan isu-isu yang relevan dengan kehidupan sehari-hari.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="glass-card" data-delay="1">
+          <div class="card-icon">LIB</div>
+          <h3>Ruang Baca</h3>
+          <p>
+            Setiap bulan kami bedah satu buku bersama. Dari novel klasik
+            hingga esai kontemporer — semua ada tempatnya di sini.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="glass-card" data-delay="2">
+          <div class="card-icon">ARC</div>
+          <h3>Arsip Tulisan</h3>
+          <p>
+            Setiap tulisan anggota diarsipkan dalam format PDF dan tersedia
+            untuk dibaca siapa pun. Ide yang baik pantas diabadikan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       KEGIATAN KAMI
+  ============================================================ -->
+  <section class="kegiatan section" id="kegiatan">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Yang Kami Lakukan</span>
+        <h2 class="section-title">Kegiatan Kami</h2>
+        <p class="section-desc">
+          Tiga kegiatan utama yang menjadi pilar komunitas Philosophia.
+          Terbuka untuk semua — tidak perlu latar belakang akademis tertentu.
+        </p>
+      </div>
+
+      <div class="cards-grid three-col">
+        <!-- Kegiatan 1 -->
+        <div class="kegiatan-card glass-card" data-delay="0">
+          <div class="kegiatan-num">01</div>
+          <div class="kegiatan-icon">FORUM</div>
+          <h3>Forum Mingguan</h3>
+          <p>
+            Setiap Sabtu sore, anggota berkumpul — daring maupun luring —
+            untuk mendiskusikan topik yang dipilih bersama. Semua suara
+            dihargai, semua argumen disambut.
+          </p>
+          <ul class="kegiatan-meta">
+            <li>Setiap Sabtu, 15.00 WIB</li>
+            <li>Daring &amp; Luring</li>
+          </ul>
+        </div>
+        <!-- Kegiatan 2 -->
+        <div class="kegiatan-card glass-card featured-card" data-delay="1">
+          <div class="kegiatan-num">02</div>
+          <div class="kegiatan-icon">BOOK</div>
+          <h3>Bedah Buku</h3>
+          <p>
+            Satu buku, satu bulan, banyak perspektif. Kami membaca bersama
+            lalu mendiskusikan makna, konteks, dan relevansi karya tersebut
+            dengan kehidupan kita hari ini.
+          </p>
+          <ul class="kegiatan-meta">
+            <li>Akhir bulan</li>
+            <li>1 buku/bulan</li>
+          </ul>
+        </div>
+        <!-- Kegiatan 3 -->
+        <div class="kegiatan-card glass-card" data-delay="2">
+          <div class="kegiatan-num">03</div>
+          <div class="kegiatan-icon">WRITE</div>
+          <h3>Kelas Menulis</h3>
+          <p>
+            Workshop menulis yang dipandu oleh anggota berpengalaman. Dari
+            esai argumentatif, puisi, cerpen, hingga opini — semua genre
+            kami eksplorasi bersama.
+          </p>
+          <ul class="kegiatan-meta">
+            <li>2 Kali sebulan</li>
+            <li>Semua genre</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       QUOTE SECTION
+  ============================================================ -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="quote-wrapper">
+        <span class="quote-mark open">"</span>
+        <blockquote>
+          Tulisan yang baik sering dimulai dari<br />keberanian untuk bertanya.
+        </blockquote>
+        <span class="quote-mark close">"</span>
+        <p class="quote-attr">— Philosophia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RUANG BACA / KUMPULAN TULISAN
+  ============================================================ -->
+  <section class="tulisan section" id="tulisan">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Arsip Komunitas</span>
+        <h2 class="section-title">Kumpulan Tulisan</h2>
+        <p class="section-desc">
+          Judul dan penulis diambil dari antologi Philosophia, dibuat ringkas menjadi
+          3 tulisan per kategori. File PDF bisa kamu tambahkan satu per satu ke folder <strong>pdf</strong>.
+        </p>
+      </div>
+
+      <!-- Search & Filter -->
+      <div class="tulisan-controls">
+        <!-- Search -->
+        <div class="search-wrapper">
+          <span class="search-icon">⌕</span>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Cari judul atau penulis…"
+            aria-label="Cari tulisan"
+          />
+        </div>
+
+        <!-- Filter Kategori -->
+        <div class="filter-buttons" id="filterButtons" role="group" aria-label="Filter kategori">
+          <button class="filter-btn active" data-filter="semua">Semua</button>
+          <button class="filter-btn" data-filter="filsafat">Filsafat</button>
+          <button class="filter-btn" data-filter="agama">Agama</button>
+          <button class="filter-btn" data-filter="sosial">Sosial</button>
+          <button class="filter-btn" data-filter="sejarah">Sejarah</button>
+          <button class="filter-btn" data-filter="puisi">Puisi</button>
+        </div>
+      </div>
+
+      <!-- Tulisan Grid -->
+      <div class="tulisan-grid" id="tulisanGrid">
+        <!-- Cards di-render oleh script.js -->
+      </div>
+
+      <!-- Empty state -->
+      <div class="empty-state" id="emptyState" style="display:none;">
+        <span class="empty-icon">∅</span>
+        <p>Tidak ada tulisan yang cocok dengan pencarian kamu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       KONTAK
+  ============================================================ -->
+  <section class="kontak section" id="kontak">
+    <div class="container">
+      <div class="kontak-inner">
+        <!-- Left: Ajakan -->
+        <div class="kontak-text">
+          <span class="section-label">Bergabung</span>
+          <h2 class="section-title">Siap Jadi Bagian<br />dari Philosophia?</h2>
+          <p>
+            Komunitas terbuka untuk siapa saja yang ingin berpikir lebih
+            dalam, membaca lebih luas, dan menulis lebih berani. Tidak ada
+            syarat — hanya niat dan semangat.
+          </p>
+          <div class="contact-buttons">
+            <a
+              href="https://wa.me/6289608856721?text=Halo%20Philosophia%2C%20saya%20ingin%20bergabung%20dan%20mencari%20tahu%20lebih%20lanjut."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp"
+            >
+              <span class="wa-icon">WA</span> Chat WhatsApp Admin
+            </a>
+            <a
+              href="mailto:alwafymatahari@gmail.com?subject=Perkenalan%20Anggota%20Philosophia&body=Halo%20Philosophia%2C%20saya%20ingin%20bergabung."
+              class="btn btn-email"
+            >
+              <span class="email-icon">@</span> Email Admin
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="kontak-form glass-card">
+          <h3>Kirim Perkenalan via Email</h3>
+          <p class="form-note">
+            Isi form ini, lalu klik tombol di bawah. Browser akan membuka draft email otomatis ke admin Philosophia. Setelah itu, tekan Kirim di aplikasi email.
+          </p>
+          <div class="form-group">
+            <label for="namaInput">Nama Lengkap</label>
+            <input type="text" id="namaInput" placeholder="Siapa namamu?" />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Alamat Email</label>
+            <input type="email" id="emailInput" placeholder="email@contoh.com" />
+          </div>
+          <div class="form-group">
+            <label for="alasanInput">Alasan Bergabung</label>
+            <textarea id="alasanInput" rows="4" placeholder="Ceritakan sedikit tentang dirimu dan mengapa kamu tertarik bergabung…"></textarea>
+          </div>
+          <button class="btn btn-primary btn-full" id="submitForm">
+            Kirim Perkenalan via Email
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            Draft email sudah dibuka. Silakan tekan kirim di aplikasi email kamu.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-phi large">Φ</span>
+          <span class="logo-text">Philosophia</span>
+        </div>
+        <p class="footer-tagline">Tempat ide bertemu, lalu menjadi tulisan.</p>
+        <div class="footer-links">
+          <a href="#tentang">Tentang</a>
+          <a href="#kegiatan">Kegiatan</a>
+          <a href="#tulisan">Tulisan</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Philosophia. Semua hak dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       MODAL PREVIEW PDF
+  ============================================================ -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Preview PDF" style="display:none;">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle">Judul Tulisan</h3>
+        <button class="modal-close" id="modalClose" aria-label="Tutup preview">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="pdfFrame" src="" title="Preview PDF" loading="lazy"></iframe>
+      </div>
+      <div class="modal-footer">
+        <a id="pdfDownload" href="#" target="_blank" class="btn btn-outline btn-sm">
+          ↓ Buka di Tab Baru
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
