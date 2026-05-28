@@ -1820,20 +1820,26 @@ body > * { position: relative; z-index: 1; }
   }
 
   [data-theme="light"] .nav-links,
+  [data-theme="light"] .nav-links.active,
   [data-theme="light"] .navbar-menu,
   [data-theme="light"] .mobile-menu {
     background: rgba(255, 248, 231, 0.96) !important;
-    border: 1px solid rgba(120, 80, 20, 0.18) !important;
+    border: 1px solid rgba(121, 114, 105, 0.18) !important;
     box-shadow: 0 18px 45px rgba(80, 50, 20, 0.16) !important;
   }
 
   [data-theme="light"] .nav-links a,
+  [data-theme="light"] .nav-links.active a,
   [data-theme="light"] .navbar-menu a,
   [data-theme="light"] .mobile-menu a {
-    color: #c5c4c6 !important;
+    color: #2a1600 !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    font-weight: 700 !important;
   }
 
   [data-theme="light"] .nav-links a:hover,
+  [data-theme="light"] .nav-links.active a:hover,
   [data-theme="light"] .navbar-menu a:hover,
   [data-theme="light"] .mobile-menu a:hover {
     color: #9d6b00 !important;
