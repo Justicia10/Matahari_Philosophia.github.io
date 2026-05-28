@@ -1770,46 +1770,52 @@ body > * { position: relative; z-index: 1; }
   }
 }
 
-/* FIX MOBILE LIGHT MODE HERO */
+/* FIX: LIGHT MODE BENERAN TERANG DI MOBILE */
 @media (max-width: 768px) {
+  [data-theme="light"] body {
+    background:
+      radial-gradient(circle at 18% 16%, rgba(255, 190, 120, 0.35), transparent 18rem),
+      radial-gradient(circle at 88% 18%, rgba(78, 205, 196, 0.22), transparent 18rem),
+      linear-gradient(135deg, #fff8e7 0%, #f7eadc 55%, #efe1d0 100%) !important;
+  }
+
   [data-theme="light"] .hero {
     background:
-      radial-gradient(circle at 20% 18%, rgba(255, 107, 107, 0.22), transparent 36%),
-      radial-gradient(circle at 85% 40%, rgba(78, 205, 196, 0.22), transparent 42%),
-      linear-gradient(135deg, #090b1b 0%, #11152d 55%, #17243a 100%) !important;
+      radial-gradient(circle at 20% 20%, rgba(255, 107, 107, 0.16), transparent 16rem),
+      radial-gradient(circle at 85% 38%, rgba(78, 205, 196, 0.18), transparent 16rem),
+      linear-gradient(135deg, #fff8e7 0%, #f7eadc 58%, #efe1d0 100%) !important;
   }
 
   [data-theme="light"] .hero-title {
-    color: #fff8e7 !important;
-    text-shadow: 0 10px 35px rgba(0, 0, 0, 0.45) !important;
+    color: #201526 !important;
+    text-shadow: none !important;
   }
 
   [data-theme="light"] .hero-title em,
   [data-theme="light"] .hero-title span {
-    color: #ffe59e !important;
+    color: #9d6b00 !important;
   }
 
   [data-theme="light"] .hero-desc {
-    color: rgba(255, 248, 231, 0.78) !important;
+    color: #5a4b60 !important;
   }
 
   [data-theme="light"] .hero-bg-word {
-    opacity: 0.13 !important;
-    color: rgba(255, 248, 231, 0.25) !important;
-    filter: blur(6px) !important;
-  }
-
-  [data-theme="light"] .hero::before {
-    opacity: 0.35 !important;
+    color: rgba(32, 21, 38, 0.055) !important;
+    opacity: 1 !important;
+    filter: blur(5px) !important;
   }
 
   [data-theme="light"] .navbar {
-    background: rgba(8, 11, 26, 0.86) !important;
-    border-bottom: 1px solid rgba(255, 209, 102, 0.18) !important;
+    background: rgba(255, 248, 231, 0.88) !important;
+    border-bottom: 1px solid rgba(32, 21, 38, 0.10) !important;
   }
 
-  [data-theme="light"] .nav-logo span,
-  [data-theme="light"] .nav-links a {
-    color: #fff8e7 !important;
+  [data-theme="light"] .nav-logo span {
+    color: #201526 !important;
+  }
+
+  [data-theme="light"] .hamburger span {
+    background: #201526 !important;
   }
 }
