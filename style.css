@@ -1830,7 +1830,7 @@ body > * { position: relative; z-index: 1; }
   [data-theme="light"] .nav-links a,
   [data-theme="light"] .navbar-menu a,
   [data-theme="light"] .mobile-menu a {
-    color: #201526 !important;
+    color: #c5c4c6 !important;
   }
 
   [data-theme="light"] .nav-links a:hover,
