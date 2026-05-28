@@ -1769,3 +1769,39 @@ body > * { position: relative; z-index: 1; }
     text-overflow: ellipsis;
   }
 }
+
+@media (max-width: 768px) {
+  [data-theme="light"] .hero {
+    background:
+      radial-gradient(circle at top left, rgba(255, 170, 120, 0.18), transparent 45%),
+      radial-gradient(circle at bottom right, rgba(120, 220, 255, 0.16), transparent 45%),
+      #f6f1e8;
+  }
+
+  [data-theme="light"] .hero-bg-word {
+    color: rgba(80, 40, 20, 0.04);
+    filter: blur(6px);
+  }
+
+  [data-theme="light"] .hero h1 {
+    color: #2b1d16;
+  }
+
+  [data-theme="light"] .hero h1 span {
+    color: #b97732;
+  }
+
+  [data-theme="light"] .hero p {
+    color: rgba(35, 25, 20, 0.78);
+  }
+
+  [data-theme="light"] .navbar {
+    background: rgba(255, 248, 240, 0.78);
+    backdrop-filter: blur(18px);
+  }
+
+  [data-theme="light"] .hero-stat {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(180, 140, 90, 0.25);
+  }
+}
